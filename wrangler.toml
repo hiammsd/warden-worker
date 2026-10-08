@@ -110,7 +110,7 @@ crons = ["0 3 * * *"]
 
 [[d1_databases]]
 binding = "vault1"
-database_name = "vault1"
+database_name = "warden-worker-db"
 database_id = "763a7767-ffbc-4909-99dd-5fe60709cde8"
 migrations_dir = "migrations"
 
@@ -159,7 +159,7 @@ simple = { limit = 10, period = 60 }
 
 [[env.dev.d1_databases]]
 binding = "vault1"
-database_name = "vault1-dev"
+database_name = "warden-worker-db"
 database_id = "763a7767-ffbc-4909-99dd-5fe60709cde8"
 migrations_dir = "migrations"
 
