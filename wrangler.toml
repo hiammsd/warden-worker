@@ -113,8 +113,8 @@ crons = ["0 3 * * *"]
 
 [[d1_databases]]
 binding = "vault1"
-database_name = "warden-worker-db"
-database_id = "763a7767-ffbc-4909-99dd-5fe60709cde8"
+database_name = "warden-db-v2"
+database_id = "916a9369-bf35-4203-9d8f-0e907504d65f"
 migrations_dir = "migrations"
 
 # R2 bucket for file attachments (optional, requires credit card)
@@ -163,8 +163,8 @@ simple = { limit = 10, period = 60 }
 
 [[env.dev.d1_databases]]
 binding = "vault1"
-database_name = "warden-worker-db"
-database_id = "763a7767-ffbc-4909-99dd-5fe60709cde8"
+database_name = "warden-db-v2"
+database_id = "916a9369-bf35-4203-9d8f-0e907504d65f"
 migrations_dir = "migrations"
 
 # R2 bucket for file attachments in dev environment (optional, requires credit card)
