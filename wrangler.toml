@@ -127,6 +127,7 @@ migrations_dir = "migrations"
 # If R2 is not configured, KV will be used for attachments.
 [[kv_namespaces]]
 binding = "ATTACHMENTS_KV"
+id = "40f102695bd944a2b7aea6e1eebd714c"
 
 [env.dev]
 name = "warden-worker-dev"
@@ -170,6 +171,7 @@ migrations_dir = "migrations"
 # KV namespace for file attachments in dev environment (optional, no credit card required)
 [[env.dev.kv_namespaces]]
 binding = "ATTACHMENTS_KV"
+id = "40f102695bd944a2b7aea6e1eebd714c"
 
 # logs
 [env.dev.observability]
@@ -183,3 +185,6 @@ persist = true
 enabled = false
 persist = true
 head_sampling_rate = 1
+
+# signups
+ALLOW_SINGUPS = "true"
