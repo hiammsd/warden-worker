@@ -54,6 +54,9 @@ html_handling = "auto-trailing-slash"
 run_worker_first = ["/api/*", "/identity/*", "/notifications/*"]
 
 [vars]
+# Allow user registration (true / false)
+ALLOW_SIGNUPS = "true"
+
 # Base URL for the worker, used for generating up/down URLs for files.
 # If not set, the base URL will be extracted from the incoming request.
 # BASE_URL = "https://vault.example.com"
@@ -135,6 +138,7 @@ workers_dev = false
 preview_urls = false
 
 [env.dev.vars]
+ALLOW_SIGNUPS = "true"
 
 [env.dev.durable_objects]
 bindings = [
@@ -185,6 +189,3 @@ persist = true
 enabled = false
 persist = true
 head_sampling_rate = 1
-
-# signups
-ALLOW_SINGUPS = "true"
