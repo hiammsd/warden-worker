@@ -55,9 +55,9 @@ run_worker_first = ["/api/*", "/identity/*", "/notifications/*"]
 
 [vars]
 # Allow user registration (true / false)
-ALLOW_SIGNUPS = "true"[cite: 14]
-PASSWORD_ITERATIONS = "600000"[cite: 14]
-LOGIN_MISSING_USER_DELAY_MS = "0"[cite: 14]
+ALLOW_SIGNUPS = "true"
+PASSWORD_ITERATIONS = "600000"
+LOGIN_MISSING_USER_DELAY_MS = "0"
 EXPERIMENTAL_CLIENT_SUPPORT = "true"
 
 # Base URL for the worker, used for generating up/down URLs for files.
